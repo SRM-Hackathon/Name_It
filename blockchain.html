@@ -44,41 +44,53 @@
         <div class="container">
             <div class="jumbotron mt-4">
                 <div class="table-responsive">
-                    <table class="table">
+                    <table class="table",id="block">
                         <thead class="thead-dark">
                             <tr>
                             <th scope="col">Index</th>
                             <th scope="col">Name</th>
-                            <th scope="col">location</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Medical speciality</th>
+                            <th scope="col">Sample name</th>
+                            <th scope="col">Transcription</th>
+                            <th scope="col">Hash</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                             <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                            <td>John</td>
+                            <td>Consult for laparoscopic gastric bypass</td>
+                            <td>Bariatrics</td>
+                            <td>Laparoscopic Gastric Bypass Consult - 2</td>
+                            <td>He has difficulty climbing stairs, difficulty with airline seats, tying shoes, used to public seating, and lifting objects off the floor</td>
+                            <td>d56fe0cde33ad268ad7ca2a10329bd07d44ac55f94de2d8475e55f8eb998c7a7</td>
                             </tr>
                             <tr>
                             <th scope="row">2</th>
                             <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
+                            <td>2-D Echocardiogram</td>
+                            <td>Cardiovascular Pulmonary</td>
+                            <td>2-D Echocardiogram - 1</td>
+                            <td>Left atrial enlargement with left atrial diameter of 4.7 cm. Normal size right and left ventricle. Normal LV systolic function with left ventricular ejection fraction of 51%</td>
+                            <td>03ebc3dfe4793ef377a618f8be14f1301943187945e491abe8585a4d9374b81c</td>
                             </tr>
                             <tr>
                             <th scope="row">3</th>
                             <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
+                            <td>Acute Allergic reaction</td>
+                            <td>Allergy/Immunology</td>
+                            <td>Allergy Evaluation Consult</td>
+                            <td>A 34-year-old male presents today self-referred at the recommendation of Emergency Room physicians and his nephrologist to pursue further allergy evaluation and treatment</td>
+                            <td>e695bf6538d2281ca2ebc469a2bb835952b1aef5856ba09f9886082d13b5dc2d</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <button type="button" class="btn btn-success">verify</button>
+            <button type="button" class="btn btn-success" onclick="verify()">verify</button>
         </div>
-        
+
     </div>
     
 
@@ -94,6 +106,11 @@
           <a href="Contact.html">Contact</a>
         </div>
     </div>
+    <script>
+        function verify(){
+                alert("Verified!")
+        }
+    </script>
 
     <!-- Logout form -->
 
