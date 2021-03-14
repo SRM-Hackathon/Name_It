@@ -56,8 +56,8 @@ data.addBlock(new Block(4, "2-D Echocardiogram", "Cardiovascular / Pulmonary", "
 data.addBlock(new Block(5, " Morbid obesity.", "Bariatrics", "Laparoscopic Gastric Bypass", "Overweight for many years. She has tried many different diets, but is unsuccessful. Received some handouts, and signed the consent. The risks and benefits of the procedure have been explained to the patient."))
 
 var myJSON = JSON.stringify(data, null, 4);
-console.log(data.chain[1].hash);
-console.log(data.isChainValid());
+console.log(data.chain);
+console.log("Checking the validation of the block chain : " +data.isChainValid());
 // var bodyParser = require('body-parser');
 // var express = require('express');
 // var app = express();
