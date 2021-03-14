@@ -5,7 +5,7 @@ function validate()
     if(username=="Raj024" && password=="nameit")
     {
         alert("LOGIN Successful!");
-        window.location.replace('./blockchain.html')
+        window.open('./blockchain.html','_blank','resizable=yes')
     }
     else{
         alert("LOGIN Failed!");
